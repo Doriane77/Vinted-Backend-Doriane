@@ -7,11 +7,6 @@ const uid2 = require("uid2");
 const User = require("../Models/user-model");
 
 const cloudinary = require("cloudinary").v2;
-cloudinary.config({
-  cloud_name: "kimeva",
-  api_key: "239947553397816",
-  api_secret: "7lp7tHJEvZQnt4BQ1xfDCtm2C1Y",
-});
 
 /*
 Model User:

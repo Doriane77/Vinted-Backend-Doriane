@@ -35,7 +35,7 @@ router.get("/Users", async (req, res) => {
 });
 
 // Se connecter mot de passe: azerty ou jikook
-router.post("/User-login", async (req, res) => {
+router.post("/User/login", async (req, res) => {
   try {
     const { email, password } = req.fields;
     const user = await User.findOne({ email: email });
@@ -67,7 +67,7 @@ router.post("/User-login", async (req, res) => {
 });
 
 // Creer un compte
-router.post("/User-signUp", async (req, res) => {
+router.post("/User/signUp", async (req, res) => {
   try {
     const { email, username, password, phone, avatar } = req.fields;
 

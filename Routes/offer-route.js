@@ -93,7 +93,7 @@ router.get("/Offers", async (req, res) => {
 });
 
 // Modifier une Offre
-router.post("/Offer/Update", isAuthenticated, async (req, res) => {
+router.post("/Offer/update", isAuthenticated, async (req, res) => {
   try {
     const {
       name,
@@ -172,7 +172,7 @@ router.post("/Offer/Update", isAuthenticated, async (req, res) => {
 });
 
 // Creer une offre
-router.post("/Publish", isAuthenticated, async (req, res) => {
+router.post("/Offer/publish", isAuthenticated, async (req, res) => {
   try {
     const { name, description, price, brand, size, color, city, condition } =
       req.fields;

@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 cloudinary.config({
-  cloud_name: "kimeva",
+  cloud_name: process.env.CLOUD_NAME_API,
   api_key: process.env.API_KEY,
   api_secret: process.env.API_SECRET,
 });

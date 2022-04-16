@@ -35,6 +35,6 @@ app.all("*", (req, res) => {
   res.status(404).send("Page introuvable");
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3200, () => {
   console.log("Server started");
 });
